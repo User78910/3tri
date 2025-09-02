@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>ROBERTO-TELEFLIX</title>
+  <title>Minecraft OG</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>ROBERTO-TELEFLIX</h1>
+    <h1>Minecraft OG</h1>
   </header>
 
   <!-- LAYOUT: MENU LATERAL (ESQ) + VÍDEO (DIR) -->
@@ -18,9 +18,9 @@
       <section style="padding:12px 0;">
         <label for="tema" style="color:#BDC3C7; margin-right:8px;">ESCOLHA O TEMA:</label>
         <select id="tema">
-          <option value="LOUVOR">LOUVOR</option>
-          <option value="MENSAGENS">MENSAGENS</option>
-          <option value="INFANTIL">INFANTIL</option>
+          <option value="CasaAutomática">LOUVOR</option>
+          <option value="TazerCraft">MENSAGENS</option>
+          <option value="Jazzghost">INFANTIL</option>
           <option value="AULAS">AULAS</option>
         </select>
       </section>
@@ -71,47 +71,79 @@
   <script>
     // Mapa de temas → lista de vídeos
     const TEMAS = {
-      LOUVOR: [
-        { titulo: "EU SOU TEU PAI", 
-         autor: "VALESCA MAYSSA", 
-         url: "https://www.youtube.com/watch?v=kNJPalON82E" 
+      CasaAutomática: [
+        { titulo: "Em busca da casa automática EP:1", 
+         autor: "Vinicius 13", 
+         url: "https://youtu.be/aWzKb071D9o?si=OxXJL8zIwkZ2bXNQ" 
         },
-        { titulo: "DEUS DE PROMESSAS", 
-         autor: "MINISTÉRIO APASCENTAR", 
-         url: "https://youtu.be/93XkdakMp00?si=-S0mta76Kc_GxWhd" 
+        { titulo: "Achei Redstone! EP:2", 
+         autor: "Vinicius 13", 
+         url: "https://youtu.be/l3y3shHkKmA?si=QNeQehjAeNFbd91y" 
         },
-        { titulo: "NINGUÉM EXPLICA DEUS", 
-         autor: "PRETO NO BRANCO", 
-         url: "https://youtu.be/LYsaKn8FRhc?si=R7yN3htfuafehfSw" 
+        { titulo: "Matador de Ghasts EP:3", 
+         autor: "Vinicius 13", 
+         url: "https://youtu.be/Q1B2UF3Wm_E?si=5cA4lBJ9VUpy29fH" 
         },
-      ],
-      MENSAGENS: [
-        { titulo: "O TEMPO É CURTO; FAÇA O MELHOR USO DO SEU TEMPO", 
-         autor: "BILLY GRAHAM EM PORTUGUÊS", 
-         url: "https://youtu.be/fmsAqGy2pCM?si=u8aCy5Lwjoj80xAB" 
+        { titulo: "Os Cavaleiros da Redstone EP:4", 
+         autor: "Vinicius 13", 
+         url: "https://youtu.be/1eNowGnLgjo?si=BjKR6VZF6HI48DCS" 
         },
-        { titulo: "QUEM É JESUS CRISTO?", 
-         autor: "BILLY GRAHAM EM PORTUGUÊS", 
-         url: "https://youtu.be/6ATJ6avomUg?si=4_qlxZGejDlxVyz5" 
+        { titulo: "Começamos a casa! EP:5", 
+         autor: "Vinicius 13", 
+         url: "https://youtu.be/A6LvF_BHgMs?si=lV3z-v6d4rp6kTrI" 
         },
       ],
-      INFANTIL: [
-        { titulo: "SOY UNA TAZA", 
-         autor: "CANTA JUEGO", 
-         url: "https://youtu.be/cgEnBkmcpuQ?si=paA3pkAIp3lgAmjQ" 
+      TazerCraft: [
+        { titulo: "ESPECIAL BATALHA DE RAP!(esconde-esconde)", 
+         autor: "TazerCraft", 
+         url: "https://youtu.be/D6VgaAY4LK0?si=giforKiCYG5ZimLh" 
         },
-        { titulo: "PEDRO, THIAGO, JOÃO NO BARQUINHO", 
-         autor: "3 PALAVRINHAS", 
-         url: "https://youtu.be/Tdwy3BZe61s?si=As38T49IC695wKE0" 
+        { titulo: "MALDIÇÃO DO CELLBIT!(esconde-esconde)", 
+         autor: "TazerCraft", 
+         url: "https://youtu.be/Y9RrljpQ11U?si=Bio4TtfjSCUVGVmf" 
+        },
+        { titulo: "PRINCESAS DA DISNEY!(esconde-esconde)", 
+         autor: "TazerCraft", 
+         url: "https://youtu.be/EIDIHT95gdw?si=raExvm7osaTTGe_1" 
+        },
+        { titulo: "ESPECIAL DE 1 ANO!(esconde-esconde)", 
+         autor: "TazerCraft", 
+         url: "https://youtu.be/ioUnFqVyeVI?si=p9a_-RRUISVHwkaH" 
+        },
+        { titulo: "LEGO BATMAN!(esconde-esconde)", 
+         autor: "TazerCraft", 
+         url: "https://youtu.be/0pe2QSNMY20?si=w7azSjLR2P5-utov" 
         },
       ],
-      AULAS: [
+      Jazzghost: [
+        { titulo: "Minecraft Origens EP:1", 
+         autor: "Jazzghost", 
+         url: "https://youtu.be/kva-0poT7Ls?si=yVKCAab3gnspUfFD" 
+        },
+        { titulo: "Minecraft Origens EP:2", 
+         autor: "Jazzghost", 
+         url: "https://youtu.be/VKoi2NMOBIs?si=5JowK95tc8s4rUsv" 
+        },
+        { titulo: "Minecraft Origens EP:3", 
+         autor: "Jazzghost", 
+         url: "https://youtu.be/kCYVVzDUOJ8?si=ZfXAHFxy8DC3cn7m" 
+        },
+        { titulo: "Minecraft Origens EP:4", 
+         autor: "Jazzghost", 
+         url: "https://youtu.be/OIPI5MOuEV8?si=ed0sc3rPJ_UeADQg" 
+        },
+        { titulo: "Minecraft Origens EP:5", 
+         autor: "Jazzghost", 
+         url: "https://youtu.be/ndLk4iKxzC8?si=BsMC8puU7CqpSRM-" 
+        },
+      ],
+      AuthenticGames: [
         { titulo: "INTRODUÇÃO A JAVASCRIPT", 
-         autor: "TIGER CODES", 
+         autor: " AuthenticGames", 
          url: "https://youtu.be/WRlfwBof66s?si=0o80ULtCNqjj-lU2" 
         },
         { titulo: "HTML E CSS BÁSICO EM 5 MINUTOS", 
-         autor: "TIGER CODES", 
+         autor: " AuthenticGames", 
          url: "https://www.youtube.com/watch?v=5Hn58p-hYC0" 
         },
       ],
